@@ -43,3 +43,4 @@ test/
 
 # Windows
 Thumbs.db
+.vercel
