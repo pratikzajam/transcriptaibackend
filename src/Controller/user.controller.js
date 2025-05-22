@@ -2,7 +2,7 @@ import User from '../Models/user.model.js';
 
 export const saveUserData = async (req, res) => {
   try {
-    const { name, email, picture } = req.body;
+    const { name, email, picture } = req.body|| {};
 
     if (!name || !email) {
       return res.status(400).json({ message: 'Name and email are required' });
