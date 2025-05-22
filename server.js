@@ -14,7 +14,7 @@ console.log(process.env.PORT)
 app.use(cors()); // This will allow requests from all origins
 
 // Connect to MongoDB
-// connectDB();
+connectDB();
 
 // Middleware
 app.use(express.json());
